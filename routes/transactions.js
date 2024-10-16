@@ -11,6 +11,6 @@ router
     .get(getTransactions)
     .post(addTransactions);
 
-router.route("/:id").post(deleteTransactions);
+router.route("/:id").delete(deleteTransactions);
 
 export default router;
