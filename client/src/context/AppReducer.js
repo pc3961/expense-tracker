@@ -9,7 +9,7 @@ export default (state, action)=>{
     case 'DELETE_TRANSACTION':
         return{
             ...state,
-            transactions:state.transactions.filter(transactions=>transactions.id!= action.payload)
+            transactions:state.transactions.filter(transactions=>transactions._id!= action.payload)
         }
 
     case 'ADD_TRANSACTION':
